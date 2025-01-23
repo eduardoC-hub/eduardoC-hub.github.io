@@ -1,163 +1,120 @@
 <script>
-    import { onMount } from "svelte";
+    import { onMount } from 'svelte';
   
-    let nome = "";
-    let usuario = "";
-    let senha = "";
-    let confirmSenha = "";
-    let msgError = "";
-    let msgSuccess = "";
+    let email = '';
+    let password = '';
+    let errorMessage = '';
   
-    function cadastrar() {
-      // Limpa mensagens anteriores
-      msgError = "";
-      msgSuccess = "";
-  
-      // Validação de campos
-      if (!nome || !usuario || !senha || !confirmSenha) {
-        msgError = "Todos os campos são obrigatórios!";
-        return;
+    // Função para validar o formulário
+    function validateForm() {
+      if (!email || !password) {
+        errorMessage = 'Por favor, preencha todos os campos.';
+        return false;
       }
   
-      if (senha !== confirmSenha) {
-        msgError = "As senhas não coincidem!";
-        return;
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        errorMessage = 'Insira um e-mail válido.';
+        return false;
       }
   
-      // Simula sucesso no cadastro
-      msgSuccess = "Cadastro realizado com sucesso!";
-      function cadastrar() {
-  // Limpa mensagens anteriores
-  msgError = "";
-  msgSuccess = "";
-  
-  // Limpa os campos após o sucesso
-  nome = "";
-  usuario = "";
-  senha = "";
-  confirmSenha = "";
-}
+      errorMessage = '';
+      return true;
     }
   
+    // Função para lidar com o envio do formulário
+    function handleSubmit(event) {
+      event.preventDefault();
+  
+      if (validateForm()) {
+        console.log('E-mail:', email);
+        console.log('Senha:', password);
+        alert('Login bem-sucedido!');
+  
+        // Resetar campos
+        email = '';
+        password = '';
+      }
+    }
   </script>
   
-  
-  <div class="container">
-    <h1>Cadastrar</h1>
-  
-    <div id="msgError">{msgError}</div>
-    <div id="msgSuccess">{msgSuccess}</div>
-  
-    <div class="label-float">
-      <input
-        type="text"
-        id="nome"
-        bind:value={nome}
-        placeholder=" "
-        required
-      />
-      <label id="labelNome" for="nome">Nome</label>
-    </div>
-  
-    <div class="label-float">
-      <input
-        type="text"
-        id="usuario"
-        bind:value={usuario}
-        placeholder=" "
-        required
-      />
-      <label id="labelUsuario" for="usuario">Usuário</label>
-    </div>
-  
-    <div class="label-float">
-      <input
-        type="password"
-        id="senha"
-        bind:value={senha}
-        placeholder=" "
-        required
-      />
-      <label id="labelSenha" for="senha">Senha</label>
-    </div>
-  
-    <div class="label-float">
-      <input
-        type="password"
-        id="confirmSenha"
-        bind:value={confirmSenha}
-        placeholder=" "
-        required
-      />
-      <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
-    </div>
-  
-    <div class="justify-center">
-      <button on:click={cadastrar}>Cadastrar</button>
-    </div>
-    <div class="justify-center">
-      <a class ="btn" href="/DW2">Ir para outra página</a>
-    </div>
-  </div>
-
-  
   <style>
-    /* Estilo básico para centralizar o conteúdo e estilizar o formulário */
-    .container {
-      max-width: 400px;
-      margin: auto;
-      padding: 20px;
-      border: 1px solid #ccc;
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+  
+    .login-box {
+      background: white;
+      padding: 2rem;
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-  
-    .label-float {
-      position: relative;
-      margin: 20px 0;
-    }
-  
-    .label-float input {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
       width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
+    }
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    label {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+  
+    input {
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
       border-radius: 4px;
+      font-size: 1rem;
     }
   
-    .label-float label {
-      position: absolute;
-      top: 10px;
-      left: 12px;
-      font-size: 12px;
-      color: #666;
-    }
-  
-    .justify-center {
-      margin-top: 20px;
+    .error {
+      color: red;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
     }
   
     button {
-      padding: 10px 20px;
+      padding: 0.75rem;
       background-color: #007bff;
       color: white;
       border: none;
       border-radius: 4px;
       cursor: pointer;
+      font-size: 1rem;
     }
   
     button:hover {
       background-color: #0056b3;
     }
-  
-    #msgError {
-      color: red;
-      margin-bottom: 10px;
-    }
-  
-    #msgSuccess {
-      color: green;
-      margin-bottom: 10px;
-    }
   </style>
   
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Login</h2>
+  
+      {#if errorMessage}
+        <div class="error">{errorMessage}</div>
+      {/if}
+  
+      <form on:submit|preventDefault={handleSubmit}>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" bind:value={email} placeholder="Digite seu e-mail" />
+  
+        <label for="password">Senha</label>
+        <input type="password" id="password" bind:value={password} placeholder="Digite sua senha" />
+  
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
