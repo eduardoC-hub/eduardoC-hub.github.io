@@ -6,7 +6,7 @@
     let errorMessage = '';
   
     // Função para validar o formulário
-    function validateForm() {
+    function alidateForm() {
       if (!email || !password) {
         errorMessage = 'Por favor, preencha todos os campos.';
         return false;
@@ -114,7 +114,8 @@
         <label for="password">Senha</label>
         <input type="password" id="password" bind:value={password} placeholder="Digite sua senha" />
   
-        <button type="submit">Entrar</button>
+        <button type="button" onclick= "DW2">Entrar</button>
+
       </form>
     </div> 
   </div>
