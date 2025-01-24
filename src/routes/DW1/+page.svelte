@@ -37,6 +37,28 @@
     }
   </script>
   
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Cadastre-se</h2>
+  
+      {#if errorMessage}
+        <div class="error">{errorMessage}</div>
+      {/if}
+  
+      <form on:submit|preventDefault={handleSubmit}>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" bind:value={email} placeholder="Digite seu e-mail" />
+  
+        <label for="password">Senha</label>
+        <input type="password" id="password" bind:value={password} placeholder="Digite sua senha" />
+  
+        <button type="button" onclick="/DW2">Entrar</button>
+        <a href="/DW2"> ir ao site</a>
+
+      </form>
+    </div> 
+  </div>
+
   <style>
     .login-container {
       display: flex;
@@ -98,25 +120,3 @@
       background-color: #0056b3;
     }
   </style>
-  
-  <div class="login-container">
-    <div class="login-box">
-      <h2>Cadastre-se</h2>
-  
-      {#if errorMessage}
-        <div class="error">{errorMessage}</div>
-      {/if}
-  
-      <form on:submit|preventDefault={handleSubmit}>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" bind:value={email} placeholder="Digite seu e-mail" />
-  
-        <label for="password">Senha</label>
-        <input type="password" id="password" bind:value={password} placeholder="Digite sua senha" />
-  
-        <button type="button" onclick="/DW2">Entrar</button>
-        <a href="/DW2"> ir ao site</a>
-
-      </form>
-    </div> 
-  </div>
