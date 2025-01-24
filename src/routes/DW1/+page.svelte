@@ -54,7 +54,7 @@
         <button type="button" onclick="/DW2">Entrar</button>
         <a href="/DW2"> ir ao site</a>
 
-      </form>
+      </form> 
     </div> 
   </div>
 
