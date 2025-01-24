@@ -12,10 +12,6 @@
         return false;
       }
   
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        errorMessage = 'Insira um e-mail válido.';
-        return false;
-      }
   
       errorMessage = '';
       return true;
