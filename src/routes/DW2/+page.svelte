@@ -41,6 +41,8 @@
 
 <div class="footer">
   <p>&copy; 2025 Loxiuos. Todos os direitos reservados.</p>
+  <br>
+  <p>siga no instagram @edu_cale <3</p>
 </div>
 
 <style>
@@ -58,7 +60,7 @@
 
   .content-section {
     padding: 40px 0;
-    text-align: center;
+   
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -67,6 +69,7 @@
 
   .content-section h2 {
     color: #343a40;
+    text-align: center;
   }
 
   .content-section p {
