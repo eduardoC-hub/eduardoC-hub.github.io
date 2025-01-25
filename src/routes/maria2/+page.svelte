@@ -129,7 +129,8 @@
       background-color: #ff66b2;
       color: white;
       text-align: center;
-      padding: 20px;
+      width: 100%;
+      height: 225px;
     }
   
     .footer p {
