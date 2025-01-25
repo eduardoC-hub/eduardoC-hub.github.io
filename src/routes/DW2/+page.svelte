@@ -52,9 +52,6 @@
     background-color: #f8f9fa;
     font-family: 'Arial', sans-serif;
   }
-  .b {
-    color: #ffd700;
-  }
 
   .header {
     background-color: #343a40;

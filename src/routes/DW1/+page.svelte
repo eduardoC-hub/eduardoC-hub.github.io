@@ -75,9 +75,6 @@
     height: 100vh;
     background-color: #f5f5f5;
   }
-.b{
-  color: #ffd700;
-}
   .login-box {
     background: white;
     padding: 2rem;
