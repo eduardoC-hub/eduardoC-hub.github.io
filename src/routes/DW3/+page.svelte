@@ -38,8 +38,7 @@
   crossorigin="anonymous"
 /> 
 <div class="borao">
-  <button class="btn" onclick="window.location.href='edurdoC-hub.github.io/DW2';">Mudar de Página</button>
-
+  <button class="borao" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/DW3'}>Ver Carros</button>
   <h1 class="text-center mb-4">Esses são três dos nosso carros Luxuoso mais vendidos!</h1>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     {#each cars as car}
