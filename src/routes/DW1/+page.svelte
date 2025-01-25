@@ -49,6 +49,11 @@
         <input type="email" id="email" bind:value={email} placeholder="Digite seu e-mail" />
   
         <label for="password">Senha</label>
+        <input type="password" id="password" bind:value={password} placeholder="Digite sua senha" />
+  
+        <button type="button" onclick="/DW2">Entrar</button>
+        <a href="/DW2"> ir ao site</a>
+
        
       </form> 
     </div> 
