@@ -55,10 +55,7 @@
     {#if promoMessage}
       <p class="mt-3 text-warning">{promoMessage}</p>
     {/if}
-  
-    <button class="btn btn-info mt-3" on:click={showGreeting}>Clique para uma saudação especial</button>
   </div>
-  
   <div class="footer">
     <p>&copy; 2025 Pink Glam. Todos os direitos reservados.</p>
     <p>Siga-nos no Instagram @pinkglam_oficial</p>
@@ -71,7 +68,7 @@
     }
   
     .header {
-      background-color: #ff66b2;
+      background-color: #f8a7cf;
       color: white;
       padding: 40px 0;
       text-align: center;
@@ -87,7 +84,7 @@
     }
   
     .content-section h2 {
-      color: #ff66b2;
+      color: hsl(330, 86%, 80%);
     }
   
     .content-section p {
@@ -97,7 +94,7 @@
     }
   
     .btn-primary {
-      background-color: #ff66b2;
+      background-color: #ffa8d4;
       border: none;
       padding: 10px 20px;
       font-size: 16px;
@@ -105,7 +102,7 @@
     }
   
     .btn-primary:hover {
-      background-color: #ff3385;
+      background-color: #fdb5d2;
     }
   
     .btn-success {
