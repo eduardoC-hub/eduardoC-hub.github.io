@@ -1,11 +1,6 @@
 <script>
-  let greetingMessage = '';
   let promoMessage = '';
   let catalogVisible = false;
-
-  function showGreeting() {
-    greetingMessage = 'Bem-vinda à Pink Glam! Adoramos ajudar você a encontrar o look perfeito.';
-  }
 
   function showPromo() {
     promoMessage = 'Use o código VERÃO20 para ganhar 20% de desconto em todas as peças de verão!';
@@ -24,30 +19,22 @@
 />
 
 <!-- Cabeçalho -->
-<header class="bg-primary text-white text-center p-4">
+<header class="bg-gradient p-5 text-center text-white">
   <h1 class="display-4">Pink Glam</h1>
-  <p>Onde o estilo e a sofisticação se encontram</p>
+  <p class="lead">Onde o estilo encontra a sofisticação. Descubra seu próximo look agora.</p>
 </header>
-
-<!-- Saudação -->
-<section class="container my-5 text-center">
-  <button class="btn btn-outline-light" on:click={showGreeting}>Clique para uma saudação</button>
-  {#if greetingMessage}
-    <p class="mt-3 text-success">{greetingMessage}</p>
-  {/if}
-</section>
 
 <!-- Sobre a loja -->
 <section class="container my-5">
   <h2 class="text-center text-primary">Sobre a Pink Glam</h2>
-  <p class="text-muted text-center">Localizada no coração da cidade, a Pink Glam oferece roupas que combinam estilo e sofisticação.</p>
-  <p class="text-center">Nossa missão é proporcionar a você as últimas tendências da moda para que você se sinta única e especial.</p>
+  <p class="text-muted text-center">A Pink Glam é mais do que uma loja, é um conceito de moda. Aqui, as mulheres encontram peças para todas as ocasiões, sempre com o toque de elegância e exclusividade que merecem.</p>
+  <p class="text-center">Com um portfólio único e atendimento de primeira, nossa missão é fazer você se sentir incrível todos os dias.</p>
 </section>
 
 <!-- Localização -->
 <section class="container my-5">
-  <h2 class="text-center text-primary">Visite-nos</h2>
-  <p class="text-muted text-center">Estamos na Rua das Flores, nº 123, no centro da cidade. Venha nos visitar e se apaixonar pelas nossas coleções.</p>
+  <h2 class="text-center text-primary">Onde nos Encontrar</h2>
+  <p class="text-muted text-center">Visite nossa loja física na Rua das Flores, nº 123, no centro da cidade. Estamos prontos para atendê-la com muito carinho e atenção!</p>
 </section>
 
 <!-- Botões interativos -->
@@ -55,7 +42,7 @@
   <button class="btn btn-warning" on:click={toggleCatalog}>Ver Catálogo</button>
   {#if catalogVisible}
     <div class="mt-3">
-      <p>Descubra as últimas coleções da Pink Glam e escolha suas peças favoritas!</p>
+      <p>Explore as últimas coleções da Pink Glam e encontre as peças que mais combinam com você!</p>
     </div>
   {/if}
 
@@ -77,17 +64,22 @@
     background-color: #f8f9fa;
   }
 
-  h1, h2 {
-    font-family: 'Segoe UI', sans-serif;
-  }
-
-  .btn-outline-light {
-    border-color: #fff;
-    color: #fff;
-  }
-
-  .btn-outline-light:hover {
+  .header {
     background-color: #ff66b2;
+  }
+
+  header {
+    background: linear-gradient(45deg, #ff66b2, #ff3385);
+  }
+
+  h1 {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
   }
 
   .btn-warning {
@@ -111,5 +103,36 @@
   footer {
     background-color: #333;
     color: white;
+  }
+
+  footer p {
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  .content-section {
+    padding: 40px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+
+  .content-section h2 {
+    color: hsl(330, 86%, 80%);
+  }
+
+  .content-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 800px;
+  }
+
+  .mt-3 {
+    margin-top: 1rem;
   }
 </style>
