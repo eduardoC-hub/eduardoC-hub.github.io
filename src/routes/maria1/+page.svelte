@@ -143,8 +143,8 @@
       <h2>Bem-vinda à sua nova loja favorita!</h2>
       <p>Descubra roupas incríveis para todas as ocasiões. Compre com estilo, confiança e conforto!</p>
       <div class="button-group">
-        <a href="#produtos">Ver Produtos</a>
-        <a href="#sobre">Saiba Mais</a>
+        <a href="">Ver Produtos</a>
+        <a href="">Saiba Mais</a>
       </div>
     </section>
   
