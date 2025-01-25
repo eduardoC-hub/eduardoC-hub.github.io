@@ -1,5 +1,8 @@
 <script>
-  // Aqui podemos ter algum código de navegação ou outras funcionalidades
+  let greetingMessage = '';
+  function showGreeting() {
+    greetingMessage = 'Obrigado por visitar nossa loja! Estamos ansiosos para atendê-lo.';
+  }
 </script>
 
 <link
@@ -8,6 +11,54 @@
   integrity="sha384-oTB1D2DRj/qB3UUAsb0x2Djq2v6wtAq3orFl4Bp1DxtDqktwkpPpLLUMflRRXHvH"
   crossorigin="anonymous"
 />
+
+<div class="header">
+  <h1>Bem-vindo à Loxius</h1>
+  <p>Onde o luxo encontra a performance.</p>
+  <button class="btn btn-info mt-3" on:click={showGreeting}>Clique para uma saudação especial</button>
+  {#if greetingMessage}
+    <p class="mt-3 text-success">{greetingMessage}</p>
+  {/if}
+</div>
+
+<div class="container content-section">
+  <h2>Sobre a Nossa Loja</h2>
+  <p>Localizada no coração da cidade, nossa loja oferece uma experiência única para quem busca carros de luxo. Aqui, você encontrará os modelos mais exclusivos, com a qualidade e sofisticação que você merece. Se você está em busca de algo realmente especial, a Loxius é o lugar certo!</p>
+  <p>Com um ambiente moderno e uma equipe de profissionais altamente qualificados, garantimos um atendimento personalizado para você escolher o carro dos seus sonhos. Cada detalhe é pensado para sua experiência ser inesquecível.</p>
+</div>
+
+<div class="container content-section">
+  <h2>Visite-nos</h2>
+  <p>Estamos localizados na Avenida das Américas, nº 2000, no centro da cidade. Nossa loja é de fácil acesso e está pronta para receber você.</p>
+  <p>Se você procura exclusividade, conforto e um atendimento impecável, venha nos visitar e vivencie a experiência de estar em um verdadeiro showroom de carros de luxo. Nosso time estará à disposição para oferecer uma experiência única!</p>
+</div>
+
+<div class="container content-section">
+  <h2>Entre em Contato</h2>
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Seu Nome</label>
+      <input type="text" class="form-control" id="name" placeholder="Digite seu nome" />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Seu E-mail</label>
+      <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" />
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Mensagem</label>
+      <textarea class="form-control" id="message" rows="3" placeholder="Sua mensagem..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+
+<div class="container text-center">
+  <button class="btn btn-primary mt-3" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/DW3'}>Ver Carros</button>
+</div>
+
+<div class="footer">
+  <p>&copy; 2025 Loja de Carros Luxuosos. Todos os direitos reservados.</p>
+</div>
 
 <style>
   body {
@@ -25,10 +76,32 @@
   .content-section {
     padding: 40px 0;
     text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
   }
 
   .content-section h2 {
     color: #343a40;
+  }
+
+  .content-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .btn-info {
+    background-color: #17a2b8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .btn-info:hover {
+    background-color: #138496;
   }
 
   .btn-primary {
@@ -49,29 +122,9 @@
     text-align: center;
     padding: 20px;
   }
+
+  .footer p {
+    font-size: 14px;
+    color: #ccc;
+  }
 </style>
-
-<div class="header">
-  <h1>Bem-vindo à loxius</h1>
-  <p>Onde o luxo encontra a performance.</p>
-</div>
-
-<div class="container content-section">
-  <h2>Sobre a Nossa Loja</h2>
-  <p>Localizada no coração da cidade, a nossa loja oferece uma experiência única para quem busca carros de luxo. Aqui, você encontrará os modelos mais exclusivos, com a qualidade e sofisticação que você merece.</p>
-  <p>Com um ambiente moderno e uma equipe de profissionais altamente qualificados, garantimos um atendimento personalizado para você escolher o carro dos seus sonhos.</p>
-</div>
-
-<div class="container content-section">
-  <h2>Visite-nos</h2>
-  <p>Estamos localizados na Avenida das Américas, nº 2000, no centro da cidade. Nossa loja é de fácil acesso e está pronta para receber você.</p>
-  <p>Se você procura exclusividade, conforto e um atendimento impecável, venha nos visitar e vivencie a experiência de estar em um verdadeiro showroom de carros de luxo.</p>
-</div>
-
-<div class="container text-center">
-  <button class="btn btn-primary" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/DW3'}>Ver Carros</button>
-</div>
-
-<div class="footer">
-  <p>&copy; 2025 Loja de Carros Luxuosos. Todos os direitos reservados.</p>
-</div>
