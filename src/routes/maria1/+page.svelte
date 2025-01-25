@@ -123,7 +123,7 @@
   
     .info-card p {
       font-size: 1rem;
-      color: #f8f8f8;
+      color: #fd81f3;
     }
   </style>
   
@@ -150,15 +150,15 @@
     <section class="info-section">
       <div class="info-card">
         <h3>Moda Exclusiva</h3>
-        <p>Peças únicas e exclusivas que refletem sua personalidade.</p>
+        <p><b>Peças únicas e exclusivas que refletem sua personalidade.</b></p>
       </div>
       <div class="info-card">
         <h3>Conforto Garantido</h3>
-        <p>Roupas feitas com materiais de alta qualidade para o seu conforto.</p>
+        <p><b>Roupas feitas com materiais de alta qualidade para o seu conforto.</b></p>
       </div>
       <div class="info-card">
         <h3>Atendimento Premium</h3>
-        <p>Uma experiência de compra personalizada e inesquecível.</p>
+        <p><b>Uma experiência de compra personalizada e inesquecível.</b></p>
       </div>
     </section>
   </main>
