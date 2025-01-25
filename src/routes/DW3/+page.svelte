@@ -39,6 +39,7 @@
 /> 
 <div class="borao">
   <button class="borao" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/DW3'}>Ver Carros</button>
+</div>
   <h1 class="text-center mb-4">Esses são três dos nosso carros Luxuoso mais vendidos!</h1>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     {#each cars as car}
