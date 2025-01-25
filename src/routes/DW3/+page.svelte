@@ -40,7 +40,7 @@
     crossorigin="anonymous"
   /> 
   <div class="container py-5">
-    <h1 class="text-center mb-4">Carros Luxuosos</h1>
+    <h1 class="text-center mb-4">Esses são três dos nosso carros Luxuoso mais vendidos!</h1>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       {#each cars as car}
         <div class="col">
