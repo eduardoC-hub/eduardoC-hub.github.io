@@ -42,7 +42,7 @@
 <div class="footer">
   <p>&copy; 2025 Loxiuos. Todos os direitos reservados.</p>
   <br>
-  <p>siga no instagram @edu_cale <3</p>
+  <p>siga no instagram @edu_cale S2</p>
 </div>
 
 <style>
