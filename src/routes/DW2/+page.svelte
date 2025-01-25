@@ -40,7 +40,7 @@
 </div>
 
 <div class="footer">
-  <p>&copy; 2025 Loja de Carros Luxuosos. Todos os direitos reservados.</p>
+  <p>&copy; 2025 Loxiuos. Todos os direitos reservados.</p>
 </div>
 
 <style>
