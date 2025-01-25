@@ -100,7 +100,7 @@
       <p>Sem carros favoritos, adicione algum!</p>
     {/if}
   </div>
-</div>
+
 
 <style>
   .containerone {
