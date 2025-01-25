@@ -132,7 +132,7 @@
       margin-top: 2rem;
       background-color: aqua;
       width: 100%;
-      height: 100px;
+      height: 200px;
 
     }
   
@@ -166,8 +166,8 @@
       border-radius: 15px;
     }
     .card-img-top {
-      width: 150px;
-      height: 150px; 
+      width: 350px;
+      height: 250px; 
       object-fit: cover; 
     }
   </style>
