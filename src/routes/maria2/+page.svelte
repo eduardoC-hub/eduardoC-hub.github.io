@@ -12,7 +12,7 @@
       cart.push(product);
       alert(`${product.name} foi adicionado ao carrinho!`);
     }
-  </script>
+</script>
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
   
@@ -64,6 +64,4 @@
       {/each}
     </div>
   </main>
-  
-  =
   
