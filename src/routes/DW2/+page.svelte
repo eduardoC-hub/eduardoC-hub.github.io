@@ -33,24 +33,7 @@
   <p>Se você procura exclusividade, conforto e um atendimento impecável, venha nos visitar e vivencie a experiência de estar em um verdadeiro showroom de carros de luxo. Nosso time estará à disposição para oferecer uma experiência única!</p>
 </div>
 
-<div class="container content-section">
-  <h2>Entre em Contato</h2>
-  <form>
-    <div class="mb-3">
-      <label for="name" class="form-label">Seu Nome</label>
-      <input type="text" class="form-control" id="name" placeholder="Digite seu nome" />
-    </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Seu E-mail</label>
-      <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" />
-    </div>
-    <div class="mb-3">
-      <label for="message" class="form-label">Mensagem</label>
-      <textarea class="form-control" id="message" rows="3" placeholder="Sua mensagem..."></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
-  </form>
-</div>
+
 
 <div class="container text-center">
   <button class="btn btn-primary mt-3" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/DW3'}>Ver Carros</button>
@@ -105,6 +88,7 @@
   }
 
   .btn-primary {
+    text-align: center;
     background-color: #007bff;
     border: none;
     padding: 10px 20px;
@@ -113,6 +97,7 @@
   }
 
   .btn-primary:hover {
+
     background-color: #0056b3;
   }
 
