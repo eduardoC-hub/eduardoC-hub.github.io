@@ -131,8 +131,8 @@
     <header>
       <h1>Loja Feminina</h1>
       <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
+        <a href="">Sobre</a>
+        <a href="">Contato</a>
         <button class="menu-button" on:click={toggleMenu}>
           {menuOpen ? 'Fechar' : 'Menu'}
         </button>
