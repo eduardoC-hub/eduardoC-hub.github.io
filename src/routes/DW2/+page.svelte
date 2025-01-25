@@ -1,4 +1,3 @@
-
 <script>
   import { onMount } from "svelte";
 
@@ -44,6 +43,9 @@
 <style>
   .card {
     transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
   }
 
   .card:hover {
@@ -53,6 +55,36 @@
 
   .favorite-list {
     margin-top: 2rem;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  .btn-warning {
+    background-color: #f0ad4e;
+    border: none;
+    transition: background-color 0.3s;
+  }
+
+  .btn-warning:hover {
+    background-color: #ec971f;
+  }
+
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-content {
+    border-radius: 15px;
   }
 </style>
 
