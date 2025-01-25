@@ -43,7 +43,7 @@
 
 <div class="login-container">
   <div class="login-box">
-    <h2>Cadastre-se</h2>
+    <h2>Cadastre-se na <b>Loxious</b></h2>
 
     {#if errorMessage}
       <div class="error">{errorMessage}</div>
@@ -75,7 +75,9 @@
     height: 100vh;
     background-color: #f5f5f5;
   }
-
+.b{
+  color: #ffd700;
+}
   .login-box {
     background: white;
     padding: 2rem;
