@@ -3,10 +3,10 @@
   
     // Lista de produtos com nome, preço e imagem
     let products = [
-      { id: 1, name: 'Vestido Floral', price: 99.99, image: '' },
-      { id: 2, name: 'Blusa Casual', price: 59.99, image: '' },
-      { id: 3, name: 'Saia Midi', price: 89.99, image: '' },
-      { id: 4, name: 'Calça Jeans', price: 120.00, image: '' }
+      { id: 1, name: 'Vestido shein', preço: 99.99, image: '' },
+      { id: 2, name: 'Blusa shein', preço: 59.99, image: '' },
+      { id: 3, name: 'Saia shein', preço: 89.99, image: '' },
+      { id: 4, name: 'Calça Jeans shein', preço: 120.00, image: '' }
     ];
   
     // Estado para o carrinho
@@ -40,6 +40,7 @@
   
     .container {
       padding-top: 30px;
+      text-align: center;
     }
   
     .header {
