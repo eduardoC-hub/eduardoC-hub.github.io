@@ -2,9 +2,9 @@
   <script>
 
     let cars = [
-      { name: "Ferrari 488", price: "$280,000", image: "ferrari.jfif", description: "A high-performance sports car with a V8 engine and stunning design." },
-      { name: "Lamborghini Aventador", price: "$393,000", image: "lambo.webp", description: "A supercar with a powerful V12 engine and unmatched luxury." },
-      { name: "Rolls-Royce Phantom", price: "$460,000", image: "rolls.jpg", description: "The epitome of elegance and sophistication in luxury vehicles." },
+      { name: "Ferrari 488", price: "$280,000", image: "ferrari.jfif", description: "Um carro esportivo de alto desempenho com motor V8 e design deslumbrante." },
+      { name: "Lamborghini Aventador", price: "$393,000", image: "lambo.webp", description: "Um supercarro com motor V12 potente e luxo incomparável." },
+      { name: "Rolls-Royce Phantom", price: "$460,000", image: "rolls.jpg", description: "O epítome da elegância e sofisticação em veículos de luxo." },
     ];
   
     let selectedCar = null;
@@ -84,7 +84,7 @@
     {/if}
   
     <div class="favorite-list">
-      <h2>Your Favorite Cars</h2>
+      <h2>Seus carros favoritos</h2>
       {#if favoriteCars.length > 0}
         <ul class="list-group">
           {#each favoriteCars as favCar}
@@ -129,7 +129,7 @@
     }
   
     .favorite-list {
-      display: grid-row;
+      display: grid;
       margin-top: 2rem;
       background-color: aqua;
       width: 100%;
