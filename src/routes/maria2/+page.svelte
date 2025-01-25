@@ -1,9 +1,9 @@
 <script>
     let products = [
-      { id: 1, name: "Vestido Floral", price: 199.9, image: "floral.jpg" },
-      { id: 2, name: "Vestido Elegante", price: 249.9, image: "elegante.jpg" },
-      { id: 3, name: "Conjunto Casual", price: 179.9, image: "casual.jpg" },
-      { id: 4, name: "Blusa Estilosa", price: 99.9, image: "estilosa.jpg" },
+      { id: 1, name: "Vestido Floral", price: 199.9, image: "" },
+      { id: 2, name: "Vestido Elegante", price: 249.9, image: "" },
+      { id: 3, name: "Conjunto Casual", price: 179.9, image: "" },
+      { id: 4, name: "Blusa Estilosa", price: 99.9, image: "" },
     ];
   
     let cart = [];
