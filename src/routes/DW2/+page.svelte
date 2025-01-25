@@ -109,14 +109,15 @@
   
   <style>
     .containerone {
+      width:100%;
       background-color: aquamarine;
       text-align: center;
-      padding: 100%;
+      height: 20px;
       display: inline-block;
     }
     .container {
       text-align: center;
-      padding: 90%;
+      padding: 20px;
       
     }
     
