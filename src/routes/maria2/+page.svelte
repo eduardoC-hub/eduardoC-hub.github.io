@@ -22,7 +22,7 @@
     integrity="sha384-oTB1D2DRj/qB3UUAsb0x2Djq2v6wtAq3orFl4Bp1DxtDqktwkpPpLLUMflRRXHvH"
     crossorigin="anonymous"
   />
-  
+  <button class="borao" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/maria1'}>voltar</button>
   <div class="header">
     <h1>Bem-vinda à <b>Pink Glam</b></h1>
     <p>Onde a elegância se encontra com o estilo.</p>
@@ -139,6 +139,11 @@
     .footer p {
       font-size: 14px;
       color: #ccc;
+    }
+    .borao{
+position: absolute;
+top:0;
+text-overflow: clip;
     }
   </style>
   
