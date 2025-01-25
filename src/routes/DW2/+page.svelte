@@ -40,6 +40,7 @@
   /> 
   <div class="container">
     <h1>Seja bem vindo a loxius!</h1>
+  
     <a class = "btn" href = "/DW1">acessar em conta?</a>
   </div>
 
@@ -108,8 +109,10 @@
   
   <style>
     .container {
+      background-color: aquamarine;
       text-align: center;
       padding: 20px;
+      display: inline-block;
     }
     
     .card {
