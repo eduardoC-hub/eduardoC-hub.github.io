@@ -1,9 +1,9 @@
 <script>
 
     let cars = [
-      { name: "Ferrari 488", price: "$280,000", image: "https://cdn.motor1.com/images/mgl/0ANVR/s1/ferrari-488.jpg", description: "A high-performance sports car with a V8 engine and stunning design." },
-      { name: "Lamborghini Aventador", price: "$393,000", image: "https://cdn.motor1.com/images/mgl/WZPVg/s1/lamborghini-aventador.jpg", description: "A supercar with a powerful V12 engine and unmatched luxury." },
-      { name: "Rolls-Royce Phantom", price: "$460,000", image: "https://cdn.motor1.com/images/mgl/6ZZVV/s1/rolls-royce-phantom.jpg", description: "The epitome of elegance and sophistication in luxury vehicles." },
+      { name: "Ferrari 488", price: "$280,000", image: "ferrari.jfif", description: "A high-performance sports car with a V8 engine and stunning design." },
+      { name: "Lamborghini Aventador", price: "$393,000", image: "lambo.webp", description: "A supercar with a powerful V12 engine and unmatched luxury." },
+      { name: "Rolls-Royce Phantom", price: "$460,000", image: "rolls.jpg", description: "The epitome of elegance and sophistication in luxury vehicles." },
     ];
   
     let selectedCar = null;
