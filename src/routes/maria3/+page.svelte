@@ -1,6 +1,4 @@
 <script>
-    import { writable } from 'svelte/store';
-  
     // Lista de produtos com nome, preço e imagem
     let products = [
       { id: 1, name: 'Vestido shein', preço: 99.99, image: 'vestidoshein.webp' },
