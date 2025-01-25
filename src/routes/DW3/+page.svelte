@@ -37,8 +37,8 @@
   integrity="sha384-oTB1D2DRj/qB3UUAsb0x2Djq2v6wtAq3orFl4Bp1DxtDqktwkpPpLLUMflRRXHvH"
   crossorigin="anonymous"
 /> 
-<div class="container py-5">
-  <button class="btn btn-secondary position-absolute top-0 start-0 m-3" onclick="window.location.href='outra_pagina.html';">Mudar de Página</button>
+<div class="borao">
+  <button class="btn" onclick="window.location.href='edurdoC-hub.github.io/DW2';">Mudar de Página</button>
 
   <h1 class="text-center mb-4">Esses são três dos nosso carros Luxuoso mais vendidos!</h1>
   <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -172,7 +172,8 @@
     object-fit: cover;
   }
 
-  .position-absolute {
-    position: absolute;
+  .borao{
+     position:absolute;
+    top:-0;
   }
 </style>
