@@ -3,10 +3,10 @@
   
     // Lista de produtos com nome, preço e imagem
     let products = [
-      { id: 1, name: 'Vestido shein', preço: 99.99, image: '' },
-      { id: 2, name: 'Blusa shein', preço: 59.99, image: '' },
-      { id: 3, name: 'Saia shein', preço: 89.99, image: '' },
-      { id: 4, name: 'Calça Jeans shein', preço: 120.00, image: '' }
+      { id: 1, name: 'Vestido shein', preço: 99.99, image: 'vestidoshein.webp' },
+      { id: 2, name: 'Blusa shein', preço: 59.99, image: 'blusa shein.webp' },
+      { id: 3, name: 'Saia shein', preço: 89.99, image: 'saia shein.webp' },
+      { id: 4, name: 'Calça Jeans shein', preço: 120.00, image: 'calçashein.webp' }
     ];
   
     // Estado para o carrinho
@@ -25,7 +25,7 @@
     }
   
     // Função para limpar o carrinho
-    function clearCart() {
+    function clearCart() { 
       cart.set([]);
     }
   </script>
@@ -127,7 +127,7 @@
   </style>
   
   <div class="header">
-    <h1>Loja de Roupas Femininas</h1>
+    <h1>Pink Glam</h1>
   </div>
   
   <div class="container">
