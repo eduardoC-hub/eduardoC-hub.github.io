@@ -38,7 +38,7 @@
     integrity="sha384-oTB1D2DRj/qB3UUAsb0x2Djq2v6wtAq3orFl4Bp1DxtDqktwkpPpLLUMflRRXHvH"
     crossorigin="anonymous"
   /> 
-  <div class="container">
+  <div class="containerone">
     <h1>Seja bem vindo a loxius!</h1>
   
     <a class = "btn" href = "/DW1">acessar em conta?</a>
@@ -108,11 +108,16 @@
   </div>
   
   <style>
-    .container {
+    .containerone {
       background-color: aquamarine;
       text-align: center;
       padding: 20px;
       display: inline-block;
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+      
     }
     
     .card {
