@@ -19,8 +19,8 @@
       justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
-      background-color: rgba(0, 0, 0, 0.5);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      background-color: rgba(255, 140, 226, 0.5);
+      box-shadow: 0 4px 6px rgba(248, 0, 215, 0.2);
     }
   
     header h1 {
@@ -129,7 +129,7 @@
   
   <main>
     <header>
-      <h1>Lojinha da maria</h1>
+      <h1>Pink glam</h1>
       <nav>
         <a href="/maria2">Sobre</a>
         <a href="">19-99991122</a>
