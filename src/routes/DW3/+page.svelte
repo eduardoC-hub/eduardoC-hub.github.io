@@ -129,6 +129,7 @@
     }
   
     .favorite-list {
+      display: grid-row;
       margin-top: 2rem;
       background-color: aqua;
       width: 100%;
