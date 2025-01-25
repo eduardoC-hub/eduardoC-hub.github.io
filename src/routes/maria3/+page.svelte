@@ -29,7 +29,7 @@
     cart.set([]);
   }
 </script>
-
+<button class="borao" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/maria1'}>voltar</button>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -37,7 +37,11 @@
     margin: 0;
     padding: 0;
   }
-
+  .borao{
+position: absolute;
+top:0;
+text-overflow: clip;
+    }
   .container {
     padding-top: 30px;
     text-align: center; 
