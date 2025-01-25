@@ -28,9 +28,8 @@
       console.log('Senha:', password);
       alert('Login bem-sucedido!');
 
-      // Resetar campos
-      email = '';
-      password = '';
+      // Redirecionar para outro site
+      window.location.href = 'https://eduardoc-hub.github.io/DW2';
     }
   }
 </script>
