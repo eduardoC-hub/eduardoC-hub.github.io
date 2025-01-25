@@ -39,8 +39,8 @@
     crossorigin="anonymous"
   /> 
   <div class="container">
-    <h1>Bem-vindo à outra página!</h1>
-    <a class = "btn" href = "/DW1">Voltar</a>
+    <h1>Seja bem vindo a loxius!</h1>
+    <a class = "btn" href = "/DW1">acessar em conta?</a>
   </div>
 
   <div class="container py-5">
@@ -156,6 +156,11 @@
   
     .modal-content {
       border-radius: 15px;
+    }
+    .card-img-top {
+      width: 100%;
+      height: 250px; 
+      object-fit: cover; 
     }
   </style>
   
