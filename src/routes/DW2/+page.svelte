@@ -34,12 +34,13 @@
 </div>
 
 <br>
+<div class ="center">
 <h3>clique no botao a baixo e veja alguns dos nossos melhores carros</h3>
 
 <div class="container text-center">
   <button class="btn btn-primary mt-3" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/DW3'}>Ver Carros</button>
 </div>
-
+</div>
 <div class="footer">
   <p>&copy; 2025 Loxiuos. Todos os direitos reservados.</p>
   <br>
@@ -67,7 +68,9 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
   }
-
+  .center {
+    text-align: center;
+  }
   .content-section h2 {
     color: #343a40;
     text-align: center;
