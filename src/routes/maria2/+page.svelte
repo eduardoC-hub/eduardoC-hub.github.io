@@ -24,12 +24,8 @@
   />
   <button class="borao" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/maria1'}>voltar</button>
   <div class="header">
-    <h1>Bem-vinda à <b>Pink Glam</b></h1>
+    <h1><b>Pink Glam</b></h1>
     <p>Onde a elegância se encontra com o estilo.</p>
-    <button class="btn btn-info mt-3" on:click={showGreeting}>Clique para uma saudação especial</button>
-    {#if greetingMessage}
-      <p class="mt-3 text-success">{greetingMessage}</p>
-    {/if}
   </div>
   
   <div class="container content-section">
