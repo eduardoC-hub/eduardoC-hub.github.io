@@ -40,7 +40,7 @@
   
     .container {
       padding-top: 30px;
-      text-align: center;
+      text-align: center; 
     }
   
     .header {
