@@ -51,8 +51,8 @@
         <label for="password">Senha</label>
         <input type="password" id="password" bind:value={password} placeholder="Digite sua senha" />
   
-        <button type="button" onclick="/DW2">Entrar</button>
-        <a href="/DW2"> ir ao site</a>
+        <a type="button" href ="/DW2">Entrar</a>
+        
 
        
       </form> 
