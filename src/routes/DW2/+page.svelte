@@ -112,7 +112,7 @@
       width:100%;
       background-color: aquamarine;
       text-align: center;
-      height: 20px;
+      height: 100px;
       display: inline-block;
     }
     .container {
