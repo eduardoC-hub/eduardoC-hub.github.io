@@ -166,7 +166,7 @@
       border-radius: 15px;
     }
     .card-img-top {
-      width: 50%;
+      width: 150px;
       height: 150px; 
       object-fit: cover; 
     }
