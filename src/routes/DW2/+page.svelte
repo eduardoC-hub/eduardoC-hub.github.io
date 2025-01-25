@@ -40,13 +40,10 @@
     integrity="sha384-oTB1D2DRj/qB3UUAsb0x2Djq2v6wtAq3orFl4Bp1DxtDqktwkpPpLLUMflRRXHvH"
     crossorigin="anonymous"
   />
-  
-
   <div class="container">
     <h1>Bem-vindo à outra página!</h1>
     <a class = "btn" href = "/DW1">Voltar</a>
   </div>
-  
   <div class="container py-5">
     <h1 class="text-center mb-4">Luxury Cars</h1>
     <div class="row g-4">
