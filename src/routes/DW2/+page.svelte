@@ -41,11 +41,11 @@
   <div class="containerone">
     <h1>Seja bem vindo a loxius!</h1>
   
-    <a class = "btn" href = "/DW1">acessar em conta?</a>
+    <a class = "btn" href = "/DW1">acessar em outra conta?</a>
   </div>
 
   <div class="container py-5">
-    <h1 class="text-center mb-4">Luxury Cars</h1>
+    <h1 class="text-center mb-4">Carros Luxuosos</h1>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       {#each cars as car}
         <div class="col">
@@ -102,7 +102,7 @@
           {/each}
         </ul>
       {:else}
-        <p>No favorite cars yet. Add some!</p>
+        <p>Sem carros favoritos, adicione algum!</p>
       {/if}
     </div>
   </div>
@@ -111,12 +111,12 @@
     .containerone {
       background-color: aquamarine;
       text-align: center;
-      padding: 20px;
+      padding: 100%;
       display: inline-block;
     }
     .container {
       text-align: center;
-      padding: 20px;
+      padding: 90%;
       
     }
     
