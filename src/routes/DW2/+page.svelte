@@ -13,7 +13,7 @@
 />
 
 <div class="header">
-  <h1>Bem-vindo à Loxius</h1>
+  <h1>Bem-vindo à <b>Loxious</b></h1>
   <p>Onde o luxo encontra a performance.</p>
   <button class="btn btn-info mt-3" on:click={showGreeting}>Clique para uma saudação especial</button>
   {#if greetingMessage}
@@ -22,7 +22,7 @@
 </div>
 
 <div class="container content-section">
-  <h2>Sobre a Loxious</h2>
+  <h2>Sobre a <b>Loxious</b></h2>
   <p>Localizada em Castilho, no centro da cidade, essa loja oferece uma experiência única para quem busca carros de luxo. Aqui, você encontrará os modelos mais exclusivos, com a qualidade e sofisticação que você merece. Se você está em busca de algo realmente especial, a Loxius é o lugar certo!</p>
   <p>Com um ambiente moderno e uma equipe de profissionais altamente qualificados, garantimos um atendimento personalizado para você escolher o carro dos seus sonhos. Cada detalhe é pensado para sua experiência ser inesquecível.</p>
 </div>
@@ -51,6 +51,9 @@
   body {
     background-color: #f8f9fa;
     font-family: 'Arial', sans-serif;
+  }
+  .b {
+    color: #ffd700;
   }
 
   .header {
