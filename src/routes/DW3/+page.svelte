@@ -49,12 +49,12 @@
             <div class="card-body">
               <h5 class="card-title">{car.name}</h5>
               <p class="card-text">{car.description}</p>
-              <p class="card-text">Price: {car.price}</p>
+              <p class="card-text">Preço em dolares: {car.price}</p>
               <button class="btn btn-primary" on:click={() => showDetails(car)}>
-                View Details
+                ver melhor
               </button>
               <button class="btn btn-warning mt-2" on:click={() => addToFavorites(car)}>
-                Add to Favorites
+                adicionar aos favoritos
               </button>
             </div>
           </div>
