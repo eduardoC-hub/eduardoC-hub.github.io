@@ -2,11 +2,13 @@
     export let cart = [];
   
     function removeFromCart(index) {
-      cart.splice(index, 1);
+      cart = cart.filter((_, i) => i !== index); // Atualiza o array sem modificar diretamente
       alert('Produto removido do carrinho!');
     }
   
-    $: total = cart.reduce((sum, item) => sum + parseFloat(item.price.replace('R$', '').replace(',', '.')), 0).toFixed(2);
+    $: total = cart
+      .reduce((sum, item) => sum + parseFloat(item.price.replace('R$', '').replace(',', '.')), 0)
+      .toFixed(2);
   </script>
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -63,3 +65,4 @@
       {/if}
     </div>
   </main>
+  

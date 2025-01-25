@@ -1,25 +1,28 @@
 <script>
     let products = [
-      { id: 1, name: "Vestido Floral", price: "R$ 199,90", image: "" },
-      { id: 2, name: "Vestido Elegante", price: "R$ 249,90", image: "" },
-      { id: 3, name: "Conjunto Casual", price: "R$ 179,90", image: "" },
-      { id: 4, name: "Blusa Estilosa", price: "R$ 99,90", image: "" },
+      { id: 1, name: "Vestido Floral", price: "R$ 199,90", image: "floral.jpg" },
+      { id: 2, name: "Vestido Elegante", price: "R$ 249,90", image: "elegante.jpg" },
+      { id: 3, name: "Conjunto Casual", price: "R$ 179,90", image: "casual.jpg" },
+      { id: 4, name: "Blusa Estilosa", price: "R$ 99,90", image: "estilosa.jpg" },
     ];
   
     let cart = [];
   
     function addToCart(product) {
-      cart.push(product);
+      cart = [...cart, product];
       alert(`${product.name} foi adicionado ao carrinho!`);
     }
-</script>
+  </script>
   
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
   
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: "Arial", sans-serif;
       background: linear-gradient(to bottom right, #fef3f7, #ffebef);
     }
   
@@ -57,7 +60,9 @@
             <div class="card-body">
               <h5 class="card-title">{product.name}</h5>
               <p class="card-text">{product.price}</p>
-              <button class="btn btn-custom" on:click={() => addToCart(product)}>Adicionar ao Carrinho</button>
+              <button class="btn btn-custom" on:click={() => addToCart(product)}>
+                Adicionar ao Carrinho
+              </button>
             </div>
           </div>
         </div>
