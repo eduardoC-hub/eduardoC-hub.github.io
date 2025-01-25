@@ -22,18 +22,19 @@
 </div>
 
 <div class="container content-section">
-  <h2>Sobre a Nossa Loja</h2>
-  <p>Localizada no coração da cidade, nossa loja oferece uma experiência única para quem busca carros de luxo. Aqui, você encontrará os modelos mais exclusivos, com a qualidade e sofisticação que você merece. Se você está em busca de algo realmente especial, a Loxius é o lugar certo!</p>
+  <h2>Sobre a Loxious</h2>
+  <p>Localizada em Castilho, no centro da cidade, essa loja oferece uma experiência única para quem busca carros de luxo. Aqui, você encontrará os modelos mais exclusivos, com a qualidade e sofisticação que você merece. Se você está em busca de algo realmente especial, a Loxius é o lugar certo!</p>
   <p>Com um ambiente moderno e uma equipe de profissionais altamente qualificados, garantimos um atendimento personalizado para você escolher o carro dos seus sonhos. Cada detalhe é pensado para sua experiência ser inesquecível.</p>
 </div>
 
 <div class="container content-section">
   <h2>Visite-nos</h2>
-  <p>Estamos localizados na Avenida das Américas, nº 2000, no centro da cidade. Nossa loja é de fácil acesso e está pronta para receber você.</p>
+  <p>Estamos localizados na rua jardim alvorada, nº 784, no coração de castilho. Nossa loja é de fácil acesso e está pronta para receber você.</p>
   <p>Se você procura exclusividade, conforto e um atendimento impecável, venha nos visitar e vivencie a experiência de estar em um verdadeiro showroom de carros de luxo. Nosso time estará à disposição para oferecer uma experiência única!</p>
 </div>
 
-
+<br>
+<h3>clique no botao a baixo e veja alguns dos nossos melhores carros</h3>
 
 <div class="container text-center">
   <button class="btn btn-primary mt-3" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/DW3'}>Ver Carros</button>
