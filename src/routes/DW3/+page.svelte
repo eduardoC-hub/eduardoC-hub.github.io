@@ -21,15 +21,15 @@
     function addToFavorites(car) {
       if (!favoriteCars.includes(car)) {
         favoriteCars = [...favoriteCars, car];
-        alert(`${car.name} has been added to your favorites!`);
+        alert(`${car.name} foi adicionado aos seus favoritos!`);
       } else {
-        alert(`${car.name} is already in your favorites.`);
+        alert(`${car.name} já está nos seus favoritos.`);
       }
     }
   
     function removeFromFavorites(car) {
       favoriteCars = favoriteCars.filter(favCar => favCar !== car);
-      alert(`${car.name} has been removed from your favorites.`);
+      alert(`${car.name}  foi removido dos seus favoritos.`);
     }
   </script>
   
@@ -130,6 +130,10 @@
   
     .favorite-list {
       margin-top: 2rem;
+      background-color: aqua;
+      width: 100%;
+      height: 100px;
+
     }
   
     .btn-primary {
