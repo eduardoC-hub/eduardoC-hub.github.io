@@ -38,7 +38,7 @@
 <h3>clique no botao a baixo e veja alguns dos nossos melhores carros</h3>
 
 <div class="container text-center">
-  <button class="btn btn-primary mt-3" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/DW2'}>Voltar ao inicio</button>
+  <button class="btn btn-primary mt-3" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/DW3'}>Ver carros</button>
 </div>
 </div>
 <div class="footer">
