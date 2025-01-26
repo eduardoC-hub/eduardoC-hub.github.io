@@ -29,7 +29,7 @@
     cart.set([]);
   }
 </script>
-<button class="borao" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/maria1'}>voltar</button>
+
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -129,7 +129,7 @@ text-overflow: clip;
     background-color: #ff3385;
   }
 </style>
-
+<button class="borao" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/maria1'}>voltar</button>
 <div class="header">
   <h1>Pink Glam</h1>
 </div>
