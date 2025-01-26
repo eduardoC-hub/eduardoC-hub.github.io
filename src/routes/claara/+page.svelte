@@ -388,7 +388,7 @@ footer .footer_main .tag .social_link i{
             <nav>
                
                 <div class="logo">
-                <img src="livro logo.png">
+                <img src="">
                 </div>
 
                 <ul>
@@ -414,7 +414,7 @@ footer .footer_main .tag .social_link i{
                 </p>
             </div>
             <div class="main image">
-                <img src="livros home.png">
+                <img src="">
             </div>
            </div>
             </section>
@@ -428,7 +428,7 @@ footer .footer_main .tag .social_link i{
                 <div class="features-books_card">
 
                   <div class="featured_books_img">
-                    <img src="a rainha vermelha.jpg">
+                    <img src="">
                   </div>
 
                   <div class="featured_books_tag">
@@ -443,7 +443,7 @@ footer .footer_main .tag .social_link i{
                 <div class="features-books_card">
 
                   <div class="featured_books_img">
-                    <img src="pedra filosofal.jpg">
+                    <img src="">
                   </div>
 
                   <div class="featured_books_tag">
@@ -458,7 +458,7 @@ footer .footer_main .tag .social_link i{
                 <div class="features-books_card">
 
                   <div class="featured_books_img">
-                    <img src="pequeno principe.jpg">
+                    <img src="">
                   </div>
 
                   <div class="featured_books_tag">
@@ -473,7 +473,7 @@ footer .footer_main .tag .social_link i{
                 <div class="features-books_card">
 
                   <div class="featured_books_img">
-                    <img src="amor e gelato.jpg">
+                    <img src="">
                   </div>
 
                   <div class="featured_books_tag">
@@ -488,7 +488,7 @@ footer .footer_main .tag .social_link i{
                 <div class="features-books_card">
 
                   <div class="featured_books_img">
-                    <img src="como eu era antes de voce.jpg">
+                    <img src="">
                   </div>
 
                   <div class="featured_books_tag">
@@ -503,7 +503,7 @@ footer .footer_main .tag .social_link i{
                 <div class="features-books_card">
 
                   <div class="featured_books_img">
-                    <img src="a 5 passos de voce.jpg">
+                    <img src="">
                   </div>
 
                   <div class="featured_books_tag">
@@ -518,7 +518,7 @@ footer .footer_main .tag .social_link i{
                 <div class="features-books_card">
 
                   <div class="featured_books_img">
-                    <img src="o lado feio do amor.jpg">
+                    <img src="">
                   </div>
 
                   <div class="featured_books_tag">
@@ -533,7 +533,7 @@ footer .footer_main .tag .social_link i{
                 <div class="features-books_card">
 
                   <div class="featured_books_img">
-                    <img src="é assim que acaba.jpg">
+                    <img src="">
                   </div>
 
                   <div class="featured_books_tag">
@@ -548,7 +548,7 @@ footer .footer_main .tag .social_link i{
                 <div class="features-books_card">
 
                   <div class="featured_books_img">
-                    <img src="a maldição do mar.jpg">
+                    <img src="">
                   </div>
 
                   <div class="featured_books_tag">
@@ -563,7 +563,7 @@ footer .footer_main .tag .social_link i{
                 <div class="features-books_card">
 
                   <div class="featured_books_img">
-                    <img src="prisioneiro de azkaban.jpg">
+                    <img src="">
                   </div>
 
                   <div class="featured_books_tag">
@@ -588,7 +588,7 @@ footer .footer_main .tag .social_link i{
 
                   <div class="arrivals-card">
                     <div class="arrivals_image">
-                      <img src="O principe cruel.jpg">
+                      <img src="">
                     </div>
                     <div class="arrivals_tag">
                       <p>Novos Lançamentos</p>
@@ -605,7 +605,7 @@ footer .footer_main .tag .social_link i{
 
                   <div class="arrivals-card">
                     <div class="arrivals_image">
-                      <img src="a garota do lago.png">
+                      <img src="">
                     </div>
                     <div class="arrivals_tag">
                       <p>Novos Lançamentos</p>
@@ -622,7 +622,7 @@ footer .footer_main .tag .social_link i{
 
                   <div class="arrivals-card">
                     <div class="arrivals_image">
-                      <img src="a vida invisivel de addie larue.jpg".jpg>
+                      <img src="a vida invisivel de addie larue.jpg">
                     </div>
                     <div class="arrivals_tag">
                       <p>Novos Lançamentos</p>
