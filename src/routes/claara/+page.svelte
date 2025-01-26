@@ -395,7 +395,7 @@ footer .footer_main .tag .social_link i{
                   <li><a href=""> Inicio </a></li>
                   <li><a href=""> Destaques </a></li>
                   <li><a href=""> Lançamentos </a></li>
-                  <li><a href="#ABOUT"> Sobre a marca </a></li>
+                  <li><a href=""> Sobre a marca </a></li>
                 </ul>
 
                 <div class= social_icon>
