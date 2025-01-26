@@ -1,6 +1,3 @@
-<script>
-
-</script>
         <style>
 *{
    margin: 0;
@@ -383,456 +380,143 @@ footer .footer_main .tag .social_link i{
 
         </style>
 
-        <section>
+<section>
+    <nav>
+        <div class="logo">
+            <img src="" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Destaques</a></li>
+            <li><a href="">Lançamentos</a></li>
+            <li><a href="">Sobre a marca</a></li>
+        </ul>
+        <div class="social_icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="main-tag">
+            <h1><b>Seja Bem Vindo à<br><span>Leia Mais</span></b></h1>
+            <p>
+                A melhor livraria do país. Aqui você encontra diversos títulos que<br>irão te surpreender,
+                com preços ótimos e de qualidade altíssima!
+            </p>
+        </div>
+        <div class="main-image">
+            <img src="" alt="Livros">
+        </div>
+    </div>
+</section>
 
-            <nav>
-               
-                <div class="logo">
-                <img src="">
-                </div>
-
-                <ul>
-                  <li><a href=""> Inicio </a></li>
-                  <li><a href=""> Destaques </a></li>
-                  <li><a href=""> Lançamentos </a></li>
-                  <li><a href=""> Sobre a marca </a></li>
-                </ul>
-
-                <div class= social_icon>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-                
-            </nav>
-            <div class="main">
-                  
-              <div class="main-tag">
-                <h1><b>Seja Bem Vindo à<br><span>Leia Mais</span></b></h1>
-                <p>
-                  A melhor livraria do país. Aqui você encontra diversos títulos que<br>irão te surpreender, 
-                  com preços ótimos e de qualidade altissíma!
-                </p>
+<div class="featured_books">
+    <p id="FEATURED">
+        <h1><b>Livros em Destaque</b></h1>
+    </p>
+    <div class="featured_books_box">
+        <!-- Repeatable book cards -->
+        <div class="features-books_card">
+            <div class="featured_books_img">
+                <img src="" alt="Capa do Livro">
             </div>
-            <div class="main image">
-                <img src="">
+            <div class="featured_books_tag">
+                <h2>Livros Destaque</h2>
+                <p class="writer">Victoria Aveyard</p>
+                <div class="categories">Romance, Ficção Juvenil</div>
+                <p class="book_price">R$30,99<sub><del>R$34,99</del></sub></p>
+                <a href="" class="f_btn">Saiba Mais</a>
             </div>
-           </div>
-            </section>
+        </div>
+        <!-- Additional book cards... -->
+    </div>
+</div>
 
-            <div class="featured_boks">
-
-               <p id="FEATURED"><h1><b>Livros em Destaque</b></h1>
-
-               <div class="featured_books_box">
-                  
-                <div class="features-books_card">
-
-                  <div class="featured_books_img">
-                    <img src="">
-                  </div>
-
-                  <div class="featured_books_tag">
-                    <h2>Livros Destaque</h2>
-                    <p class="writer">Victoria Aveyard</p>
-                    <div class="categories">Romance, Ficção Juvenil</div>
-                    <p class="book_price">R$30,99<sub><del>R$34,99</del></sub></p>
-                    <a href="" class="f_btn">Saiba Mais</a>
-                  </div>
-                
-                </div>
-                <div class="features-books_card">
-
-                  <div class="featured_books_img">
-                    <img src="">
-                  </div>
-
-                  <div class="featured_books_tag">
-                    <h2>Livros Destaque</h2>
-                    <p class="writer">J.K Rowlling</p>
-                    <div class="categories">Aventura, Fantasia</div>
-                    <p class="book_price">R$60,99<sub><del>R$69,90</del></sub></p>
-                    <a href="" class="f_btn">Saiba Mais</a>
-                  </div>
-                
-                </div>
-                <div class="features-books_card">
-
-                  <div class="featured_books_img">
-                    <img src="">
-                  </div>
-
-                  <div class="featured_books_tag">
-                    <h2>Livros Destaque</h2>
-                    <p class="writer">Antoine de Saint-Exupéry</p>
-                    <div class="categories">Literatura infantil, Fábula</div>
-                    <p class="book_price">R$13,50<sub><del>R$15,60</del></sub></p>
-                    <a href="" class="f_btn">Saiba Mais</a>
-                  </div>
-                
-                </div>
-                <div class="features-books_card">
-
-                  <div class="featured_books_img">
-                    <img src="">
-                  </div>
-
-                  <div class="featured_books_tag">
-                    <h2>Livros Destaque</h2>
-                    <p class="writer">Jenna Evans Welch</p>
-                    <div class="categories">Ficção</div>
-                    <p class="book_price">R$42,67<sub><del>R$46,67</del></sub></p>
-                    <a href="" class="f_btn">Saiba Mais</a>
-                  </div>
-                
-                </div>
-                <div class="features-books_card">
-
-                  <div class="featured_books_img">
-                    <img src="">
-                  </div>
-
-                  <div class="featured_books_tag">
-                    <h2>Livros Destaque</h2>
-                    <p class="writer">Jojo Moyes</p>
-                    <div class="categories">Romance de amor, Ficção</div>
-                    <p class="book_price">R$43,50<sub><del>R$47,92</del></sub></p>
-                    <a href="" class="f_btn">Saiba Mais</a>
-                  </div>
-                
-                </div>
-                <div class="features-books_card">
-
-                  <div class="featured_books_img">
-                    <img src="">
-                  </div>
-
-                  <div class="featured_books_tag">
-                    <h2>Livros Destaque</h2>
-                    <p class="writer">Rachael Lippincott</p>
-                    <div class="categories">Romance, Ficção</div>
-                    <p class="book_price">R$29,60<sub><del>R$32,37</del></sub></p>
-                    <a href="" class="f_btn">Saiba Mais</a>
-                  </div>
-                
-                </div>
-                <div class="features-books_card">
-
-                  <div class="featured_books_img">
-                    <img src="">
-                  </div>
-
-                  <div class="featured_books_tag">
-                    <h2>Livros Destaque</h2>
-                    <p class="writer">Colleen Hoover</p>
-                    <div class="categories">Romance de amor, Ficção</div>
-                    <p class="book_price">R$26,60<sub><del>R$28,79</del></sub></p>
-                    <a href="" class="f_btn">Saiba Mais</a>
-                  </div>
-                
-                </div>
-                <div class="features-books_card">
-
-                  <div class="featured_books_img">
-                    <img src="">
-                  </div>
-
-                  <div class="featured_books_tag">
-                    <h2>Livros Destaque</h2>
-                    <p class="writer">Colleen Hoover</p>
-                    <div class="categories">Romance de amor, Ficção</div>
-                    <p class="book_price">R$41,99<sub><del>R$46,33</del></sub></p>
-                    <a href="" class="f_btn">Saiba Mais</a>
-                  </div>
-                
-                </div>
-                <div class="features-books_card">
-
-                  <div class="featured_books_img">
-                    <img src="">
-                  </div>
-
-                  <div class="featured_books_tag">
-                    <h2>Livros Destaque</h2>
-                    <p class="writer">Shea Ernshaw</p>
-                    <div class="categories"> Ficção, Fantasia sombria</div>
-                    <p class="book_price">R$30,99<sub><del>R$34,99</del></sub></p>
-                    <a href="" class="f_btn">Saiba Mais</a>
-                  </div>
-                
-                </div>
-                <div class="features-books_card">
-
-                  <div class="featured_books_img">
-                    <img src="">
-                  </div>
-
-                  <div class="featured_books_tag">
-                    <h2>Livros Destaque</h2>
-                    <p class="writer">J.K Rowlling</p>
-                    <div class="categories">Aventura, Fantasia</div>
-                    <p class="book_price">R$62,67<sub><del>R$60,00</del></sub></p>
-                    <a href="" class="f_btn">Saiba Mais</a>
-                  </div>
-                
-                </div>
-
-              </div>
-            
+<div class="arrivals">
+    <p id="RELEASES">
+        <h1><b>Novos Lançamentos</b></h1>
+    </p>
+    <div class="arrivals_box">
+        <!-- Repeatable arrival cards -->
+        <div class="arrivals-card">
+            <div class="arrivals_image">
+                <img src="" alt="Novo lançamento">
             </div>
-
-            
-            <div class="arrivals">
-              <p id="RELEASES"><h1><b>Novos Lançamentos</b></h1>
-
-                <div class="arrivals_box">
-
-                  <div class="arrivals-card">
-                    <div class="arrivals_image">
-                      <img src="">
-                    </div>
-                    <div class="arrivals_tag">
-                      <p>Novos Lançamentos</p>
-                      <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                      </div>
-                      <a href="" class="arrivals_btn">Saiba Mais</a>
-                    </div>
-                  </div>
-
-                  <div class="arrivals-card">
-                    <div class="arrivals_image">
-                      <img src="">
-                    </div>
-                    <div class="arrivals_tag">
-                      <p>Novos Lançamentos</p>
-                      <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                      <a href="" class="arrivals_btn">Saiba Mais</a>
-                    </div>
-                  </div>
-
-                  <div class="arrivals-card">
-                    <div class="arrivals_image">
-                      <img src="">
-                    </div>
-                    <div class="arrivals_tag">
-                      <p>Novos Lançamentos</p>
-                      <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                      <a href="" class="arrivals_btn">Saiba Mais</a>
-                    </div>
-                  </div>
-
-                  <div class="arrivals-card">
-                    <div class="arrivals_image">
-                      <img src="">
-                    </div>
-                    <div class="arrivals_tag">
-                      <p>Novos Lançamentos</p>
-                      <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                      <a href="" class="arrivals_btn">Saiba Mais</a>
-                    </div>
-                  </div>
-
-                  <div class="arrivals-card">
-                    <div class="arrivals_image">
-                      <img src="">
-                    </div>
-                    <div class="arrivals_tag">
-                      <p>Novos Lançamentos</p>
-                      <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                      </div>
-                      <a href="" class="arrivals_btn">Saiba Mais</a>
-                    </div>
-                  </div>
-
-                  <div class="arrivals-card">
-                    <div class="arrivals_image">
-                      <img src="">
-                    </div>
-                    <div class="arrivals_tag">
-                      <p>Novos Lançamentos</p>
-                      <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                      </div>
-                      <a href="" class="arrivals_btn">Saiba Mais</a>
-                    </div>
-                  </div>
-
-                  <div class="arrivals-card">
-                    <div class="arrivals_image">
-                      <img src="">
-                    </div>
-                    <div class="arrivals_tag">
-                      <p>Novos Lançamentos</p>
-                      <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                      </div>
-                      <a href="" class="arrivals_btn">Saiba Mais</a>
-                    </div>
-                  </div>
-
-                  <div class="arrivals-card">
-                    <div class="arrivals_image">
-                      <img src="">
-                    </div>
-                    <div class="arrivals_tag">
-                      <p>Novos Lançamentos</p>
-                      <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                      </div>
-                      <a href="" class="arrivals_btn">Saiba Mais</a>
-                    </div>
-                  </div>
-
-                  <div class="arrivals-card">
-                    <div class="arrivals_image">
-                      <img src="">
-                    </div>
-                    <div class="arrivals_tag">
-                      <p>Novos Lançamentos</p>
-                      <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                      <a href="" class="arrivals_btn">Saiba Mais</a>
-                    </div>
-                  </div>
-
-                  <div class="arrivals-card">
-                    <div class="arrivals_image">
-                      <img src="">
-                    </div>
-                    <div class="arrivals_tag">
-                      <p>Novos Lançamentos</p>
-                      <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                      <a href="" class="arrivals_btn">Saiba Mais</a>
-                    </div>
-                  </div>
-
-
+            <div class="arrivals_tag">
+                <p>Novos Lançamentos</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
                 </div>
-                <br><br><br>
-
+                <a href="" class="arrivals_btn">Saiba Mais</a>
             </div>
-            <p id="ABOUT"></p>
-            <div class="about">
-              
-              <div class="about_image">
-                <img src="">
-              </div>
-              <div class="about_tag">
-                <h1><b>Sobre a marca</b></h1>
-                <p>
-                  Tudo começou em 1989, quando Leila presenteou sua filha com uma pequena livraria no interior de São Paulo. 
-                  A primeira loja era pequena, mas o sonho de levar felicidade em forma de livros era gigante. 
-                  Em 2010 a Leia Mais aderiu ao franchising e hoje, com mais de 600 lojas espalhadas pelo Brasil,
-                  continua com a proposta de levar sorrisos a cada história.
-                </p>
-                <a href="" class="about_btn">Saiba Mais</a>
-              </div>
+        </div>
+        <!-- Additional arrival cards... -->
+    </div>
+</div>
+
+<div class="about">
+    <div class="about_image">
+        <img src="" alt="Sobre a marca">
+    </div>
+    <div class="about_tag">
+        <h1><b>Sobre a marca</b></h1>
+        <p>
+            Tudo começou em 1989, quando Leila presenteou sua filha com uma pequena livraria no interior de São Paulo.
+            A primeira loja era pequena, mas o sonho de levar felicidade em forma de livros era gigante.
+            Em 2010 a Leia Mais aderiu ao franchising e hoje, com mais de 600 lojas espalhadas pelo Brasil,
+            continua com a proposta de levar sorrisos a cada história.
+        </p>
+        <a href="" class="about_btn">Saiba Mais</a>
+    </div>
+</div>
+
+<div class="location">
+    <div class="location_image">
+        <img src="" alt="Localização">
+    </div>
+    <div class="location_tag">
+        <h1><b>Nos encontre pertinho de você!</b></h1>
+        <p>
+            A Leia Mais possui mais de 100 lojas nas regiões centro-oeste, sul, sudeste e nordeste do Brasil.
+            Explore o nosso mapa e descubra qual a Leia Mais mais próxima de você!
+        </p>
+        <a href="" class="location_btn">Encontre uma Loja</a>
+    </div>
+</div>
+
+<footer>
+    <div class="footer_main">
+        <div class="tag">
+            <h1><b>Leia Mais</b></h1>
+            <p>
+                O sonho de levar sorrisos <br>a cada história!
+            </p>
+        </div>
+        <div class="tag">
+            <h1><b>Links</b></h1>
+            <a href="">Inicio</a>
+            <a href="">Destaques</a>
+            <a href="">Lançamentos</a>
+            <a href="">Sobre a marca</a>
+        </div>
+        <div class="tag">
+            <h1><b>Contatos</b></h1>
+            <a href=""><i class="fa-solid fa-phone"></i> +55 (18) 4002-8922</a>
+            <a href=""><i class="fa-solid fa-phone"></i> +55 (18) 5478-3214</a>
+            <a href=""><i class="fa-solid fa-envelope"></i> Leiamais@gmail.com</a>
+        </div>
+        <div class="tag">
+            <h1><b>Redes Sociais</b></h1>
+            <div class="social-link">
+                <a href=""><i class="fa-brands fa-facebook-f"></i> @leiamais</a>
+                <a href=""><i class="fa-brands fa-instagram"></i> @leiamais</a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i> @leiamais</a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i> @leiamais</a>
             </div>
-    
-           <br><br><br><br><br><br>
-            
-           
-           <div class="location">
-
-              <div class="location_image">
-                <img src="">
-              </div>
-              <div class="location_tag">
-                <h1><b>Nos encontre pertinho de você!</b></h1>
-                <p>
-                  A Leia Mais possui mais de 100 lojas nas regiões centro-oeste, sul, sudeste e nordeste do Brasil.
-                  Explore o nosso mapa e descubra qual a Leia Mais mais próxima de você!
-                </p>
-                <a href="" class="location_btn">Encontre uma Loja</a>
-              </div>
-            </div>
-            
-
-            <br><br><br><br><br><br><br><br>
-            <footer>
-              <div class="footer_main">
-
-                <div class="tag">
-                  <h1><b>Leia Mais</b></h1>
-                  <p>
-                    O sonho de levar sorrisos <br>a cada história!
-                  </p>
-                </div>
-
-                <div class="tag">
-                  <h1><b>Links</b></h1>
-                  <a href="">Inicio</a>
-                  <a href="">Destaques</a>
-                  <a href="">Lançamentos</a>
-                  <a href="">Sobre a marca</a>
-                </div>
-
-                <div class="tag">
-                  <h1><b>Contatos</b></h1>
-                  <a href=""><i class="fa-solid fa-phone">  +55 (18) 4002-8922</i></a>
-                  <a href=""><i class="fa-solid fa-phone">  +55 (18) 5478-3214</i></a>
-                  <a href=""><i class="fa-solid fa-envelope">  Leiamais@gmail.com</i></a>
-                </div>
-
-                <div class="tag">
-                  <h1><b>Redes Sociais</b></h1>
-                  <div class="social-link">
-                    <a href=""><i class="fa-brands fa-facebook-f">  @leiamais</i></a>
-                      <a href=""><i class="fa-brands fa-instagram">  @leiamais</i></a>
-                        <a href=""><i class="fa-brands fa-x-twitter">  @leiamais</i></a>
-                          <a href="w"><i class="fa-brands fa-linkedin-in">  @leiamais</i></a>
-                </div>
-                </div>
-              </div>
-
-            </footer>
+        </div>
+    </div>
+</footer>
