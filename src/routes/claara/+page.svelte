@@ -421,7 +421,7 @@ footer .footer_main .tag .social_link i{
 
             <div class="featured_boks">
 
-               <p id="FEATURED"><h1><b>Livros em Destaque</b></h1></p>
+               <p id="FEATURED"><h1><b>Livros em Destaque</b></h1>
 
                <div class="featured_books_box">
                   
@@ -582,7 +582,7 @@ footer .footer_main .tag .social_link i{
 
             
             <div class="arrivals">
-              <p id="RELEASES"><h1><b>Novos Lançamentos</b></h1></p>
+              <p id="RELEASES"><h1><b>Novos Lançamentos</b></h1>
 
                 <div class="arrivals_box">
 
@@ -836,6 +836,3 @@ footer .footer_main .tag .social_link i{
               </div>
 
             </footer>
-
-      </body>
-        </html>
