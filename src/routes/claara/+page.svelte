@@ -622,7 +622,7 @@ footer .footer_main .tag .social_link i{
 
                   <div class="arrivals-card">
                     <div class="arrivals_image">
-                      <img src="a vida invisivel de addie larue.jpg">
+                      <img src="">
                     </div>
                     <div class="arrivals_tag">
                       <p>Novos Lançamentos</p>
@@ -639,7 +639,7 @@ footer .footer_main .tag .social_link i{
 
                   <div class="arrivals-card">
                     <div class="arrivals_image">
-                      <img src="os sete maridos de evelyn hugo.jpg">
+                      <img src="">
                     </div>
                     <div class="arrivals_tag">
                       <p>Novos Lançamentos</p>
@@ -656,24 +656,7 @@ footer .footer_main .tag .social_link i{
 
                   <div class="arrivals-card">
                     <div class="arrivals_image">
-                      <img src="teto para dois.jpg">
-                    </div>
-                    <div class="arrivals_tag">
-                      <p>Novos Lançamentos</p>
-                      <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                      </div>
-                      <a href="" class="arrivals_btn">Saiba Mais</a>
-                    </div>
-                  </div>
-
-                  <div class="arrivals-card">
-                    <div class="arrivals_image">
-                      <img src="um caso perdido.jpg">
+                      <img src="">
                     </div>
                     <div class="arrivals_tag">
                       <p>Novos Lançamentos</p>
@@ -690,7 +673,7 @@ footer .footer_main .tag .social_link i{
 
                   <div class="arrivals-card">
                     <div class="arrivals_image">
-                      <img src="as mil partes do meu coração.jpg">
+                      <img src="">
                     </div>
                     <div class="arrivals_tag">
                       <p>Novos Lançamentos</p>
@@ -707,7 +690,7 @@ footer .footer_main .tag .social_link i{
 
                   <div class="arrivals-card">
                     <div class="arrivals_image">
-                      <img src="o verao que mudou minha vida.jpg">
+                      <img src="">
                     </div>
                     <div class="arrivals_tag">
                       <p>Novos Lançamentos</p>
@@ -724,7 +707,24 @@ footer .footer_main .tag .social_link i{
 
                   <div class="arrivals-card">
                     <div class="arrivals_image">
-                      <img src="vermelho branco e sangue azul.jpg">
+                      <img src="">
+                    </div>
+                    <div class="arrivals_tag">
+                      <p>Novos Lançamentos</p>
+                      <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                      </div>
+                      <a href="" class="arrivals_btn">Saiba Mais</a>
+                    </div>
+                  </div>
+
+                  <div class="arrivals-card">
+                    <div class="arrivals_image">
+                      <img src="">
                     </div>
                     <div class="arrivals_tag">
                       <p>Novos Lançamentos</p>
@@ -741,7 +741,7 @@ footer .footer_main .tag .social_link i{
 
                   <div class="arrivals-card">
                     <div class="arrivals_image">
-                      <img src="a biblioteca da meia noite.jpg">
+                      <img src="">
                     </div>
                     <div class="arrivals_tag">
                       <p>Novos Lançamentos</p>
@@ -765,7 +765,7 @@ footer .footer_main .tag .social_link i{
             <div class="about">
               
               <div class="about_image">
-                <img src="livros empilhados.png">
+                <img src="">
               </div>
               <div class="about_tag">
                 <h1><b>Sobre a marca</b></h1>
@@ -785,7 +785,7 @@ footer .footer_main .tag .social_link i{
            <div class="location">
 
               <div class="location_image">
-                <img src="mapa brasil.png">
+                <img src="">
               </div>
               <div class="location_tag">
                 <h1><b>Nos encontre pertinho de você!</b></h1>
