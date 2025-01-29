@@ -4,7 +4,7 @@
   let errorMessage = '';
 
   // Função para validar o formulário
-  function validateForm() {
+  function validateForm() { 
     if (!email || !password) {
       errorMessage = 'Por favor, preencha todos os campos.';
       return false;
