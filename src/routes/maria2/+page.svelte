@@ -3,10 +3,6 @@
   let promoMessage = '';
   let showCatalog = false;
 
-  function showGreeting() {
-    greetingMessage = 'Obrigado por visitar nossa loja! Estamos ansiosos para ajudá-la a encontrar o look perfeito.';
-  }
-
   function showPromo() {
     promoMessage = 'Aproveite 20% de desconto em todas as peças da coleção de verão! Use o código VERÃO20.';
   }
@@ -22,7 +18,7 @@
   integrity="sha384-oTB1D2DRj/qB3UUAsb0x2Djq2v6wtAq3orFl4Bp1DxtDqktwkpPpLLUMflRRXHvH"
   crossorigin="anonymous"
 />
-<button class="borao" on:click={() => window.location.href = 'https://mariafumes.github.io/maria1'}>voltar</button>
+<button class="borao" on:click={() => window.location.href = 'mariafumes.github.io/maria1'}>voltar</button>
 <div class="header">
   <h1><b>Pink Glam</b></h1>
   <p>Onde a elegância se encontra com o estilo.</p>
