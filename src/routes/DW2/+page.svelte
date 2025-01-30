@@ -1,6 +1,6 @@
 
 <script>
-import{cars}from 'lib/componentes/carros.js'
+import{cars}from '$lib/componentes/carros.js'
   let selectedCar = null;
   let favoriteCars = [];
 
