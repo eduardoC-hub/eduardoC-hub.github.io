@@ -1,7 +1,35 @@
+
 <script>
-  let greetingMessage = '';
-  function showGreeting() {
-    greetingMessage = 'Obrigado por visitar nossa loja! Estamos ansiosos para atendê-lo.';
+
+  let cars = [
+    { name: "Ferrari 488", price: "$280,000", image: "ferrari.jfif", description: "Um carro esportivo de alto desempenho com motor V8 e design deslumbrante." },
+    { name: "Lamborghini Aventador", price: "$393,000", image: "lambo.webp", description: "Um supercarro com motor V12 potente e luxo incomparável." },
+    { name: "Rolls-Royce Phantom", price: "$460,000", image: "rolls.jpg", description: "O epítome da elegância e sofisticação em veículos de luxo." },
+  ];
+
+  let selectedCar = null;
+  let favoriteCars = [];
+
+  function showDetails(car) {
+    selectedCar = car;
+  }
+
+  function clearDetails() {
+    selectedCar = null;
+  }
+
+  function addToFavorites(car) {
+    if (!favoriteCars.includes(car)) {
+      favoriteCars = [...favoriteCars, car];
+      alert(`${car.name} foi adicionado aos seus favoritos!`);
+    } else {
+      alert(`${car.name} já está nos seus favoritos.`);
+    }
+  }
+
+  function removeFromFavorites(car) {
+    favoriteCars = favoriteCars.filter(favCar => favCar !== car);
+    alert(`${car.name}  foi removido dos seus favoritos.`);
   }
 </script>
 
@@ -10,113 +38,144 @@
   rel="stylesheet"
   integrity="sha384-oTB1D2DRj/qB3UUAsb0x2Djq2v6wtAq3orFl4Bp1DxtDqktwkpPpLLUMflRRXHvH"
   crossorigin="anonymous"
-/>
+/> 
+<div class="borao">
+  <button class="borao" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/DW1'}>voltar</button>
+</div>
+<div class="container py-5">
+  <h1 class="text-center mb-4">Esses são três dos nosso carros Luxuoso mais vendidos!</h1>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    {#each cars as car}
+      <div class="col">
+        <div class="card h-100">
+          <img src={car.image} class="card-img-top" alt={car.name} />
+          <div class="card-body">
+            <h5 class="card-title">{car.name}</h5>
+            <p class="card-text">{car.description}</p>
+            <p class="card-text">Preço em dolares: {car.price}</p>
+            <button class="btn btn-primary" on:click={() => showDetails(car)}>
+              ver melhor
+            </button>
+            <button class="btn btn-warning mt-2" on:click={() => addToFavorites(car)}>
+              adicionar aos favoritos
+            </button>
+          </div>
+        </div>
+      </div>
+    {/each}
+  </div>
 
-<div class="header">
-  <h1>Bem-vindo à <b>Loxious</b></h1>
-  <p>Onde o luxo encontra a performance.</p>
-  <button class="btn btn-info mt-3" on:click={showGreeting}>Clique para uma saudação especial</button>
-  {#if greetingMessage}
-    <p class="mt-3 text-success">{greetingMessage}</p>
+  {#if selectedCar}
+    <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0, 0, 0, 0.5);">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{selectedCar.name}</h5>
+            <button type="button" class="btn-close" aria-label="Close" on:click={clearDetails}></button>
+          </div>
+          <div class="modal-body">
+            <img src={selectedCar.image} class="img-fluid mb-3" alt={selectedCar.name} />
+            <p>{selectedCar.description}</p>
+            <p>Price: {selectedCar.price}</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" on:click={clearDetails}>Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   {/if}
-</div>
 
-<div class="container content-section">
-  <h2>Sobre a <b>Loxious</b></h2>
-  <p>Localizada em Castilho, no centro da cidade, essa loja oferece uma experiência única para quem busca carros de luxo. Aqui, você encontrará os modelos mais exclusivos, com a qualidade e sofisticação que você merece. Se você está em busca de algo realmente especial, a Loxius é o lugar certo!</p>
-  <p>Com um ambiente moderno e uma equipe de profissionais altamente qualificados, garantimos um atendimento personalizado para você escolher o carro dos seus sonhos. Cada detalhe é pensado para sua experiência ser inesquecível.</p>
-</div>
-
-<div class="container content-section">
-  <h2>Visite-nos</h2>
-  <p>Estamos localizados na rua jardim alvorada, nº 784, no coração de castilho. Nossa loja é de fácil acesso e está pronta para receber você.</p>
-  <p>Se você procura exclusividade, conforto e um atendimento impecável, venha nos visitar e vivencie a experiência de estar em um verdadeiro showroom de carros de luxo. Nosso time estará à disposição para oferecer uma experiência única!</p>
-</div>
-
-<br>
-<div class ="center">
-<h3>clique no botao a baixo e veja alguns dos nossos melhores carros</h3>
-
-<div class="container text-center">
-  <button class="btn btn-primary mt-3" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/DW3'}>Ver Carros</button>
-</div>
-</div>
-<div class="footer">
-  <p>&copy; 2025 Loxiuos. Todos os direitos reservados.</p>
-  <br>
-  <p>siga no instagram @edu_cale S2</p>
+  <div class="favorite-list">
+    <h2>Seus carros favoritos</h2>
+    {#if favoriteCars.length > 0}
+      <ul class="list-group">
+        {#each favoriteCars as favCar}
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            {favCar.name}
+            <button class="btn btn-danger btn-sm" on:click={() => removeFromFavorites(favCar)}>
+              Remove
+            </button>
+          </li>
+        {/each}
+      </ul>
+    {:else}
+      <p>Sem carros favoritos, adicione algum!</p>
+    {/if}
+  </div>
 </div>
 
 <style>
-  body {
-    background-color: #f8f9fa;
-    font-family: 'Arial', sans-serif;
-  }
-
-  .header {
-    background-color: #343a40;
-    color: white;
-    padding: 40px 0;
+  .containerone {
+    width:100%;
+    background-color: aquamarine;
     text-align: center;
+    height: 100px;
+    display: inline-block;
   }
-
-  .content-section {
-    padding: 40px 0;
+  .container {
     text-align: center;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    padding: 20px;
+    
   }
-  .center {
-    text-align: center;
-  }
-  .content-section h2 {
-    color: #343a40;
-    text-align: center;
-  }
-
-  .content-section p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  .btn-info {
-    background-color: #17a2b8;
+  
+  .card {
+    transition: transform 0.3s, box-shadow 0.3s;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    border-radius: 15px;
+    overflow: hidden;
   }
 
-  .btn-info:hover {
-    background-color: #138496;
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .favorite-list {
+    display: grid;
+    margin-top: 2rem;
+    background-color: aqua;
+    width: 100%;
+    height: 200px;
+
   }
 
   .btn-primary {
-    text-align: center;
     background-color: #007bff;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
     transition: background-color 0.3s;
   }
 
   .btn-primary:hover {
-
     background-color: #0056b3;
   }
 
-  .footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  .btn-warning {
+    background-color: #f0ad4e;
+    border: none;
+    transition: background-color 0.3s;
   }
 
-  .footer p {
-    font-size: 14px;
-    color: #ccc;
+  .btn-warning:hover {
+    background-color: #ec971f;
+  }
+
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-content {
+    border-radius: 15px;
+  }
+  .card-img-top {
+    width: 350px;
+    height: 250px; 
+    object-fit: cover; 
+  }
+  .borao{
+    position: absolute;
+    top: 0;
   }
 </style>

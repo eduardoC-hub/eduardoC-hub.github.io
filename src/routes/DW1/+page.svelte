@@ -1,36 +1,7 @@
 <script>
-  let email = '';
-  let password = '';
-  let errorMessage = '';
-
-  // Função para validar o formulário
-  function validateForm() { 
-    if (!email || !password) {
-      errorMessage = 'Por favor, preencha todos os campos.';
-      return false;
-    }
-
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      errorMessage = 'Insira um e-mail válido.';
-      return false;
-    }
-
-    errorMessage = '';
-    return true;
-  }
-
-  // Função para lidar com o envio do formulário
-  function handleSubmit(event) {
-    event.preventDefault();
-
-    if (validateForm()) {
-      console.log('E-mail:', email);
-      console.log('Senha:', password);
-      alert('Login bem-sucedido!');
-
-      // Redirecionar para outro site
-      window.location.href = 'https://eduardoc-hub.github.io/DW2';
-    }
+  let greetingMessage = '';
+  function showGreeting() {
+    greetingMessage = 'Obrigado por visitar nossa loja! Estamos ansiosos para atendê-lo.';
   }
 </script>
 
@@ -41,94 +12,111 @@
   crossorigin="anonymous"
 />
 
-<div class="login-container">
-  <div class="login-box">
-    <h2>Cadastre-se na <b>Loxious</b></h2>
+<div class="header">
+  <h1>Bem-vindo à <b>Loxious</b></h1>
+  <p>Onde o luxo encontra a performance.</p>
+  <button class="btn btn-info mt-3" on:click={showGreeting}>Clique para uma saudação especial</button>
+  {#if greetingMessage}
+    <p class="mt-3 text-success">{greetingMessage}</p>
+  {/if}
+</div>
 
-    {#if errorMessage}
-      <div class="error">{errorMessage}</div>
-    {/if}
+<div class="container content-section">
+  <h2>Sobre a <b>Loxious</b></h2>
+  <p>Localizada em Castilho, no centro da cidade, essa loja oferece uma experiência única para quem busca carros de luxo. Aqui, você encontrará os modelos mais exclusivos, com a qualidade e sofisticação que você merece. Se você está em busca de algo realmente especial, a Loxius é o lugar certo!</p>
+  <p>Com um ambiente moderno e uma equipe de profissionais altamente qualificados, garantimos um atendimento personalizado para você escolher o carro dos seus sonhos. Cada detalhe é pensado para sua experiência ser inesquecível.</p>
+</div>
 
-    <form on:submit|preventDefault={handleSubmit}>
-      <label for="email">E-mail</label>
-      <input type="email" id="email" bind:value={email} placeholder="Digite seu e-mail" />
+<div class="container content-section">
+  <h2>Visite-nos</h2>
+  <p>Estamos localizados na rua jardim alvorada, nº 784, no coração de castilho. Nossa loja é de fácil acesso e está pronta para receber você.</p>
+  <p>Se você procura exclusividade, conforto e um atendimento impecável, venha nos visitar e vivencie a experiência de estar em um verdadeiro showroom de carros de luxo. Nosso time estará à disposição para oferecer uma experiência única!</p>
+</div>
 
-      <label for="password">Senha</label>
-      <input type="password" id="password" bind:value={password} placeholder="Digite sua senha" />
+<br>
+<div class ="center">
+<h3>clique no botao a baixo e veja alguns dos nossos melhores carros</h3>
 
-      <button 
-        type="submit" 
-        class="btn btn-primary mt-3" 
-        disabled={!email || !password || errorMessage}
-      >
-        Entrar
-      </button>
-    </form>
-  </div>
+<div class="container text-center">
+  <button class="btn btn-primary mt-3" on:click={() => window.location.href = 'https://eduardoc-hub.github.io/DW2'}>Ver Carros</button>
+</div>
+</div>
+<div class="footer">
+  <p>&copy; 2025 Loxiuos. Todos os direitos reservados.</p>
+  <br>
+  <p>siga no instagram @edu_cale S2</p>
 </div>
 
 <style>
-  .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-  }
-  .login-box {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
+  body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
   }
 
-  h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  label {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-  }
-
-  input {
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-
-  .error {
-    color: red;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-
-  button {
-    padding: 0.75rem;
-    background-color: #007bff;
+  .header {
+    background-color: #343a40;
     color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .content-section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  .center {
+    text-align: center;
+  }
+  .content-section h2 {
+    color: #343a40;
+    text-align: center;
+  }
+
+  .content-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .btn-info {
+    background-color: #17a2b8;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
   }
 
-  button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
+  .btn-info:hover {
+    background-color: #138496;
   }
 
-  button:hover:not(:disabled) {
+  .btn-primary {
+    text-align: center;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .btn-primary:hover {
+
     background-color: #0056b3;
+  }
+
+  .footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer p {
+    font-size: 14px;
+    color: #ccc;
   }
 </style>
