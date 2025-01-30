@@ -4,7 +4,7 @@
     let password = '';
     let errorMessage = '';
   
-    // Função para validar o formulário
+   //validar o formulário
     function validateForm() { 
       if (!email || !password) {
         errorMessage = 'Por favor, preencha todos os campos.';
@@ -20,7 +20,7 @@
       return true;
     }
   
-    // Função para lidar com o envio do formulário
+    // envio do formulário
     function handleSubmit(event) {
       event.preventDefault();
   
@@ -28,8 +28,7 @@
         console.log('E-mail:', email);
         console.log('Senha:', password);
         alert('Login bem-sucedido!');
-  
-        // Redirecionar para outro site
+        
         window.location.href = 'https://eduardoc-hub.github.io/DW1';
       }
     }
